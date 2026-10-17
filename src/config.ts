@@ -1,92 +1,111 @@
+export interface Project {
+    id: number;
+    title: string;
+    category: string;
+    technologies: string;
+    image: string;
+    github?: string;
+    live?: string;
+}
+
 export const config = {
     developer: {
         name: "Rupom",
         fullName: "MD Robayet Hassan Rupom",
-        title: "Full Stack Developer",
-        description: "Full-stack builder creating digital experiences that respect humans and scale with clarity. Accessibility is my north star."
+        title: "Full Stack Developer & Creative Designer",
+        description: "Full-stack builder creating digital experiences with high visual polish, robust architecture, and thoughtful human interaction. Turning complex workflows into elegant web apps."
     },
     social: {
-        github: "huzaifahmedz",
-        email: "rupomhossain58@gmail.com",
+        github: "rupom787",
+        email: "rupomhossain000@gmail.com",
         phone: "01714858480",
         location: "Bangladesh"
     },
     about: {
         title: "About Me",
-        description: "Full-stack builder creating digital experiences that respect humans and scale with clarity. Accessibility is my north star. I specialize in building modern web applications with React, Node.js, and cutting-edge technologies."
+        description: "Full-stack builder creating digital experiences that respect humans and scale with clarity. Accessibility and clean engineering are my core principles. I specialize in building modern, interactive web applications with React, TypeScript, Three.js, and robust backend architectures."
     },
     experiences: [
         {
-            position: "Frontend Developer",
-            company: "SelectSkillSet",
-            period: "2024 - Present",
+            position: "Frontend Developer & Team Leader",
+            company: "Humanova Trust Networks",
+            period: "2025 - Present",
             location: "Remote",
-            description: "Developing modern, responsive frontend applications with focus on user experience and performance. Working with cutting-edge technologies to build scalable web solutions.",
+            description: "Leading frontend development of multi-tenant enterprise platforms, integrating AI pipelines, real-time analytics, and high-performance WebGL animations.",
             responsibilities: [
-                "Building responsive and interactive user interfaces using React and Next.js",
-                "Implementing modern UI/UX designs with TailwindCSS and Framer Motion",
-                "Optimizing application performance and ensuring cross-browser compatibility",
-                "Collaborating with design and backend teams to deliver high-quality features"
+                "Architecting modular component design systems using React, Vite, and TailwindCSS",
+                "Implementing complex interactive dashboards, Kanban workflows, and data visualizations",
+                "Optimizing performance, bundle splitting, and client-side caching for enterprise SaaS scale",
+                "Collaborating closely with backend and AI engineers to deliver responsive, seamless workflows"
             ],
-            technologies: ["React", "Next.js", "TailwindCSS", "JavaScript", "Framer Motion", "TypeScript"]
+            technologies: ["React", "TypeScript", "TailwindCSS", "Vite", "Three.js", "Zustand"]
         },
         {
             position: "Full Stack Developer",
-            company: "Tekisky",
-            period: "2023 - 2026",
+            company: "Tekisky / Digital Projects",
+            period: "2023 - 2025",
             location: "Remote",
-            description: "Developed and maintained full-stack web applications, working on both frontend and backend systems. Collaborated with cross-functional teams to deliver robust software solutions.",
+            description: "Engineered full-stack applications with modern UI/UX and scalable backend microservices.",
             responsibilities: [
-                "Developed and maintained full-stack web applications using React, Node.js, and MongoDB",
-                "Implemented RESTful APIs and integrated third-party services",
-                "Built responsive user interfaces and optimized application performance",
-                "Worked on database design and backend architecture"
+                "Developed responsive user interfaces and full-stack REST API integrations",
+                "Designed database schemas and authentication workflows",
+                "Implemented smooth animation systems and interactive UI modules"
             ],
-            technologies: ["React", "Node.js", "MongoDB", "Express", "JavaScript", "MERN Stack"]
+            technologies: ["React", "Node.js", "MongoDB", "Express", "REST APIs", "JavaScript"]
         }
     ],
     projects: [
         {
             id: 1,
-            title: "AI-Powered Code Review Assistant",
-            category: "Full Stack",
-            technologies: "Python, TensorFlow, React, FastAPI, PostgreSQL, Docker",
-            image: "/images/project-1.webp"
+            title: "Humanova — AI Trust & Hallucination Platform",
+            category: "Full Stack SaaS / AI Governance",
+            technologies: "React 19, TypeScript, Vite, TailwindCSS, Laravel 12, FastAPI, Docker",
+            image: "/images/humanova.png",
+            github: "https://github.com/rupom787/humanova",
+            live: "https://humanova.vercel.app"
         },
         {
             id: 2,
-            title: "Real-time Collaborative Whiteboard",
-            category: "Full Stack",
-            technologies: "TypeScript, WebRTC, Socket.io, Canvas API, Node.js, Redis",
-            image: "/images/project-2.webp"
+            title: "Research Hub — Proposal & Workflow Platform",
+            category: "Enterprise Full Stack",
+            technologies: "React 18, TypeScript, Vite, TailwindCSS, shadcn/ui, Zustand, Recharts, Laravel",
+            image: "/images/project-2.webp",
+            github: "https://github.com/rupom787/research-hub-ui",
+            live: "https://research-hub-ui.vercel.app"
         },
         {
             id: 3,
-            title: "Blockchain Voting System",
-            category: "Full Stack",
-            technologies: "Solidity, Web3.js, React, Ethereum, IPFS, MetaMask",
-            image: "/images/project-3.webp"
+            title: "Interactive 3D Developer Portfolio",
+            category: "3D & Creative Web Experience",
+            technologies: "React 18, Three.js, @react-three/fiber, @react-three/cannon, GSAP, Lenis Smooth Scroll",
+            image: "/images/project-3.webp",
+            github: "https://github.com/rupom787/rupom-portfolio",
+            live: "https://rupom-portfolio.vercel.app"
         },
         {
             id: 4,
-            title: "Cloud Infrastructure Dashboard",
-            category: "Full Stack",
-            technologies: "Go, Kubernetes, Grafana, Prometheus, Terraform, React",
-            image: "/images/project-4.webp"
+            title: "Cloud Infrastructure & Microservices Hub",
+            category: "DevOps & Backend Infrastructure",
+            technologies: "Docker, Kubernetes, Redis, MySQL, Node.js, RESTful Architecture",
+            image: "/images/project-4.webp",
+            github: "https://github.com/rupom787",
+            live: "https://rupom-portfolio.vercel.app"
         },
         {
             id: 5,
-            title: "Neural Network Visualizer",
-            category: "Full Stack",
-            technologies: "Python, TensorFlow.js, D3.js, Next.js, WebGL, TypeScript",
-            image: "/images/project-5.webp"
+            title: "Neural Network & AI Pipeline Visualizer",
+            category: "Machine Learning / Data Viz",
+            technologies: "Python, TensorFlow, React, FastAPI, D3.js, WebGL",
+            image: "/images/project-5.webp",
+            github: "https://github.com/rupom787",
+            live: "https://rupom-portfolio.vercel.app"
         }
-    ],
+    ] as Project[],
     contact: {
-        email: "rupomhossain58@gmail.com",
+        email: "rupomhossain000@gmail.com",
         phone: "01714858480",
-        github: "https://github.com/Rupom090",
-        linkedin: "https://www.linkedin.com",
+        github: "https://github.com/rupom787",
+        linkedin: "https://www.linkedin.com/in/rupom-hossain",
         twitter: "https://x.com",
         instagram: "https://www.instagram.com"
     },
@@ -105,5 +124,3 @@ export const config = {
         }
     }
 };
-
-

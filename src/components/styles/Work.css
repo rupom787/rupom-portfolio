@@ -242,3 +242,54 @@
     font-size: 30px;
   }
 }
+
+/* Interactive Project Link Buttons */
+.project-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+  z-index: 5;
+  position: relative;
+}
+
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  letter-spacing: 0.3px;
+}
+
+.project-btn.live-btn {
+  background-color: var(--accentColor, #ff6b35);
+  color: #ffffff;
+  box-shadow: 0 2px 10px rgba(255, 107, 53, 0.3);
+}
+
+.project-btn.live-btn:hover {
+  background-color: #ff824d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(255, 107, 53, 0.45);
+  color: #ffffff;
+}
+
+.project-btn.repo-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #e6e6e6;
+  backdrop-filter: blur(8px);
+}
+
+.project-btn.repo-btn:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  transform: translateY(-2px);
+}

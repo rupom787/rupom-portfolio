@@ -3,8 +3,10 @@ import WorkImage from "./WorkImage";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
-import { config } from "../config";
+import { config, Project } from "../config";
 import { isMobile } from "../utils/deviceDetect";
+import { FaGithub } from "react-icons/fa6";
+import { MdArrowOutward } from "react-icons/md";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -80,7 +82,7 @@ const Work = () => {
           My <span>Work</span>
         </h2>
         <div className="work-flex">
-          {config.projects.map((project, index) => (
+          {config.projects.map((project: Project, index: number) => (
             <div className="work-box" key={project.id}>
               <div className="work-info">
                 <div className="work-title">
@@ -93,8 +95,32 @@ const Work = () => {
                 </div>
                 <h4>Tools and features</h4>
                 <p>{project.technologies}</p>
+                <div className="project-links">
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-btn live-btn"
+                      data-cursor="disable"
+                    >
+                      Live Demo <MdArrowOutward />
+                    </a>
+                  )}
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-btn repo-btn"
+                      data-cursor="disable"
+                    >
+                      <FaGithub /> Repository
+                    </a>
+                  )}
+                </div>
               </div>
-              <WorkImage image={project.image} alt={project.title} />
+              <WorkImage image={project.image} alt={project.title} link={project.live || project.github} />
             </div>
           ))}
         </div>
