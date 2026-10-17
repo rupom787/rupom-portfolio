@@ -87,18 +87,14 @@ export const config = {
             title: "Cloud Infrastructure & Microservices Hub",
             category: "DevOps & Backend Infrastructure",
             technologies: "Docker, Kubernetes, Redis, MySQL, Node.js, RESTful Architecture",
-            image: "/images/project-4.webp",
-            github: "https://github.com/rupom787",
-            live: "https://rupom-portfolio.vercel.app"
+            image: "/images/project-4.webp"
         },
         {
             id: 5,
             title: "Neural Network & AI Pipeline Visualizer",
             category: "Machine Learning / Data Viz",
             technologies: "Python, TensorFlow, React, FastAPI, D3.js, WebGL",
-            image: "/images/project-5.webp",
-            github: "https://github.com/rupom787",
-            live: "https://rupom-portfolio.vercel.app"
+            image: "/images/project-5.webp"
         }
     ] as Project[],
     contact: {
@@ -106,8 +102,8 @@ export const config = {
         phone: "01714858480",
         github: "https://github.com/rupom787",
         linkedin: "https://www.linkedin.com/in/rupom-hossain",
-        twitter: "https://x.com",
-        instagram: "https://www.instagram.com"
+        twitter: "https://x.com/rupom787",
+        instagram: "https://www.instagram.com/rupom787"
     },
     skills: {
         develop: {

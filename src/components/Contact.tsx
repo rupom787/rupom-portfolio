@@ -100,7 +100,7 @@ const Contact = () => {
               data-cursor="disable"
               className="contact-social"
             >
-              Twitter <MdArrowOutward />
+              X <MdArrowOutward />
             </a>
             <a
               href={config.contact.instagram}

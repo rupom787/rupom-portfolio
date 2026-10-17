@@ -67,8 +67,7 @@ const Navbar = () => {
   return (
     <>
       <div className="header">
-        <a href="/#" className="navbar-title" data-cursor="disable">
-        </a>
+        <a href="/#" className="navbar-title" data-cursor="disable">RHR</a>
         <a
           href={`mailto:${config.contact.email}`}
           className="navbar-connect"
